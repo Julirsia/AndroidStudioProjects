@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        tools:context=".MapsActivity" />
+
+    <EditText
+        android:id="@+id/Distance_EditText"
+        android:layout_width="270dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_weight="1.01"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:inputType="textPersonName"
+        android:lineSpacingExtra="8sp"
+        android:text="마커를 드래그 목적지로 이동시킨 뒤에 Start를 누르세요, Check를 누르세요"
+        android:textAlignment="viewEnd"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textSize="8sp"
+        android:typeface="monospace" />
+
+    <EditText
+        android:id="@+id/ip_EditText"
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Check_button"
+        android:layout_weight="1.01"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:inputType="textPersonName"
+        android:lineSpacingExtra="8sp"
+        android:text="안녕하세요"
+        android:textAlignment="viewEnd"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textSize="8sp"
+        android:typeface="monospace" />
+
+    <EditText
+    android:id="@+id/time_EditText"
+    android:layout_width="106dp"
+    android:layout_height="30dp"
+    android:layout_alignBottom="@+id/Start_button"
+    android:layout_alignParentStart="true"
+    android:layout_weight="1.01"
+    android:ems="10"
+    android:fontFamily="sans-serif"
+    android:inputType="textPersonName"
+    android:lineSpacingExtra="8sp"
+    android:text="시간"
+    android:textAlignment="viewEnd"
+    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+    android:textSize="8sp"
+    android:typeface="monospace" />
+
+    <EditText
+        android:id="@+id/rst_EditText"
+        android:layout_width="44dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/Start_button"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="118dp"
+        android:layout_weight="1.01"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:inputType="textPersonName"
+        android:lineSpacingExtra="8sp"
+        android:text="결과"
+        android:textAlignment="viewEnd"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textSize="8sp"
+        android:typeface="monospace" />
+
+
+    <Button
+        android:id="@+id/Check_button"
+        android:layout_width="100dp"
+        android:layout_height="34dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:text="Start"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/Start_button"
+        android:layout_width="100dp"
+        android:layout_height="34dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/ip_EditText"
+        android:onClick="onClick"
+        android:text="Check" />
+
+    <Button
+        android:id="@+id/connect_button"
+        android:layout_width="100dp"
+        android:layout_height="34dp"
+        android:layout_alignEnd="@+id/Distance_EditText"
+        android:layout_alignTop="@+id/Start_button"
+        android:onClick="onClick"
+        android:text="connect" />
+
+
+</RelativeLayout>
